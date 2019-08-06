@@ -12,10 +12,10 @@ import reactor.core.publisher.Mono;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-	
+	@Autowired
 	private EmployeeRepository employeeRepo;
 	
-	@Autowired
+	
 	public EmployeeServiceImpl(EmployeeRepository employeeRepo) {
         this.employeeRepo = employeeRepo;
     }
